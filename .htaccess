@@ -1,0 +1,22 @@
+Options +FollowSymLinks -MultiViews
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php [L]
+
+#Setting environtment codeigniter#
+#SetEnvIf Host localhost$ CI_ENV=development
+#SetEnvIf Host test.domain.ltd$ CI_ENV=testing
+SetEnvIf Host https://ppdb.sekolahutsman.sch.id/ CI_ENV=production
+
+###############################
+# PROTECT THE .HTACCESS FILES #
+###############################
+<Files .htaccess>
+order allow,deny
+allow from all
+</Files>
+RewriteCond %{HTTP_HOST} ^ppdb\.sekolahutsman\.sch\.id$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.ppdb\.sekolahutsman\.sch\.id$
+RewriteRule ^/?$ "https\:\/\/ppdb\.sekolahutsman\.sch\.id\/ppdb" [R=301,L]
+
