@@ -1,6 +1,6 @@
 <?php
 
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
   |--------------------------------------------------------------------------
@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   | environments.
   |
  */
-$config['base_url'] = 'https://ppdb.sekolahutsman.sch.id/';
+$config['base_url'] = '';
 
 /*
   |--------------------------------------------------------------------------
@@ -60,9 +60,10 @@ $config['uri_protocol'] = 'REQUEST_URI';
   |
  */
 
-
-$config['google_site_key'] = '6LcUwakcAAAAAApKwPCj1lsgVOlmtv-uJzSuxyGG';
-$config['google_secret_key'] = '6LcUwakcAAAAAFUZzySZs5K0ANRJIzbsq_NDVkdp';
+// $config['google_site_key'] = '6LcUwakcAAAAAApKwPCj1lsgVOlmtv-uJzSuxyGG';
+// $config['google_secret_key'] = '6LcUwakcAAAAAFUZzySZs5K0ANRJIzbsq_NDVkdp';
+$config['google_site_key'] = '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI';
+$config['google_secret_key'] = '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe';
 
 /*
   |--------------------------------------------------------------------------
@@ -448,18 +449,18 @@ $config['csrf_cookie_name'] = 'csrf_cookie_name';
 $config['csrf_expire'] = 28800;
 $config['csrf_regenerate'] = TRUE;
 $config['csrf_exclude_uris'] = array(
-    'employee/master/schoolyear/get_list_schoolyear',
-    'employee/master/employe/check_nik_employee',
-    'employee/master/employe/check_nip_employee',
-    'employee/master/student/check_nisn_student',
-    'ppdb/register/check_nisn_formulir',
-    'ppdb/register/send_mail_order_success',
-    'ppdb/settings/account/reset_password',
-    'ppdb/report/export_data_csv',
-    'ppdb/admission/export_student_formulir',
-    'ppdb/admission/export_student_files',
-    'ppdb/register/edit_formulir/[0-9a-z]+',
-    'ppdb/register/check_email_ppdb',
+	'employee/master/schoolyear/get_list_schoolyear',
+	'employee/master/employe/check_nik_employee',
+	'employee/master/employe/check_nip_employee',
+	'employee/master/student/check_nisn_student',
+	'ppdb/register/check_nisn_formulir',
+	'ppdb/register/send_mail_order_success',
+	'ppdb/settings/account/reset_password',
+	'ppdb/report/export_data_csv',
+	'ppdb/admission/export_student_formulir',
+	'ppdb/admission/export_student_files',
+	'ppdb/register/edit_formulir/[0-9a-z]+',
+	'ppdb/register/check_email_ppdb',
 );
 /*
   |--------------------------------------------------------------------------
@@ -526,4 +527,3 @@ $config['rewrite_short_tags'] = FALSE;
   | Array:		array('10.0.1.200', '192.168.5.0/24')
  */
 $config['proxy_ips'] = '';
-
