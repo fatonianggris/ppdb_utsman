@@ -443,7 +443,7 @@ $config['global_xss_filtering'] = TRUE;
   | 'csrf_regenerate' = Regenerate token on every submission
   | 'csrf_exclude_uris' = Array of URIs which ignore CSRF checks
  */
-$config['csrf_protection'] = false;
+$config['csrf_protection'] = true;
 $config['csrf_token_name'] = 'csrf_test_name';
 $config['csrf_cookie_name'] = 'csrf_cookie_name';
 $config['csrf_expire'] = 28800;
@@ -461,6 +461,8 @@ $config['csrf_exclude_uris'] = array(
 	'ppdb/admission/export_student_files',
 	'ppdb/register/edit_formulir/[0-9a-z]+',
 	'ppdb/register/check_email_ppdb',
+
+	'ppdb/register/check_email_register'
 );
 /*
   |--------------------------------------------------------------------------

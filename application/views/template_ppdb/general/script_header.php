@@ -21,6 +21,12 @@
     <!--end::Layout Themes-->
     <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/ppdb/dist/assets/media/logos/favicon.ico" />
     <style>
+		.g-recaptcha {
+			display: inline-block;
+		}
+		#recaptcha_confirm > div {
+			margin: 0 auto .5em;
+		}
         .select2-container {
             box-sizing: border-box;
             display: block;
@@ -46,6 +52,7 @@
         }
 
     </style>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
     <?php $key = $this->db->get_where('third_party_ppdb', array('id_third_party_ppdb' => 1))->result(); ?>
     <script>
