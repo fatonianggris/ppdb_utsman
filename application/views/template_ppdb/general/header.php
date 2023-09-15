@@ -541,7 +541,16 @@
                                                         <span class="menu-text">Daftar & Tambah Biaya</span>
                                                     </a>
                                                 </li>
-
+												<li class="menu-item menu-item-submenu" data-menu-toggle="hover"
+                                                    aria-haspopup="true">
+                                                    <a href="<?php echo site_url("/ppdb/settings/cost/edit_cost_guide") ?>"
+                                                        class="menu-link">
+                                                        <i class="menu-bullet menu-bullet-dot">
+                                                            <span></span>
+                                                        </i>
+                                                        <span class="menu-text">Panduan Biaya</span>
+                                                    </a>
+                                                </li>
                                             </ul>
                                         </div>
                                     </li>
