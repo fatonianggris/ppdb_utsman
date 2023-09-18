@@ -462,7 +462,8 @@ $config['csrf_exclude_uris'] = array(
 	'ppdb/register/edit_formulir/[0-9a-z]+',
 	'ppdb/register/check_email_ppdb',
 
-	'ppdb/register/check_email_register'
+	'ppdb/register/check_email_register',
+	'ppdb/api/accept_payment_ppdb'
 );
 /*
   |--------------------------------------------------------------------------

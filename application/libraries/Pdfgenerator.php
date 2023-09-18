@@ -10,6 +10,7 @@ class Pdfgenerator {
     public function generate($html, $filename = '', $attch = 0, $path = '', $stream = TRUE, $paper = 'A5', $orientation = "landscape") {
         $options = new Options();
         $options->set('isRemoteEnabled', true);
+		$options->set('isJavascriptEnabled', TRUE);
 
         $dompdf = new DOMPDF($options);
         $dompdf->load_html($html);
